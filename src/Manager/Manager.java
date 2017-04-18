@@ -1,0 +1,8 @@
+package Manager;
+
+/**
+ * Created by gecchma1 on 18/04/2017.
+ */
+public final class Manager {
+
+}

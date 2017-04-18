@@ -7,7 +7,9 @@ import java.util.List;
 /**
  * Created by gecchma1 on 11/04/2017.
  */
-public interface ServerInterface {
+public interface IServer {
+
+    final int PORT=8999;
 
     public int registrazione(User user);
     public void Login();
