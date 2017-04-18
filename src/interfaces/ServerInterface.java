@@ -10,11 +10,11 @@ import java.util.List;
 public interface ServerInterface {
 
     public int registrazione(User user);
-    public Utente Login();
-    public List<Segnalazione> getSegnalazione();
-    public int update(Utente utente);
+    public void Login();
+    public List<Void> getSegnalazione();
+    public int update(Void utente);
     public int eliminaUser();
-    public int updateSegnalazioni(List<Segnalazione> list);
-    public int updateSegnalzione(Segnalazione segnalzione);
+    public int updateSegnalazioni(List<Void> list);
+    public int updateSegnalzione(Void segnalzione);
 
 }
