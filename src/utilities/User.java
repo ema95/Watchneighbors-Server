@@ -1,49 +1,40 @@
-
-package Utility;
-
+package utilities;
 import java.util.Date;
 
-/**
- * Created by emanuele on 11.04.17.
- */
 public class User
 {
-
     private int userID;
-    private String nome;
-    private String cognome;
-    private Date data_nascita;
-    private String quartiere;
+    private String name;
+    private String surname;
+    private Date birthDate;
+    private District district;
 
-    public User(int userID, String nome, String cognome, Date data_nascita, String quartiere)
+    public User(int userID, String name, String surname, Date birthDate, District district)
     {
         this.userID = userID;
-        this.nome = nome;
-        this.cognome = cognome;
-        this.data_nascita = data_nascita;
-        this.quartiere = quartiere;
+        this.name = name;
+        this.surname = surname;
+        this.birthDate = birthDate;
+        this.district = district;
     }
 
     public int getUserID() {
         return userID;
     }
 
-    public String getNome() {
-        return nome;
+    public String getName() {
+        return name;
     }
 
-    public String getCognome() {
-        return cognome;
+    public String getSurname() {
+        return surname;
     }
 
-    public Date getData_nascita() {
-        return data_nascita;
+    public Date getBirthDate() {
+        return birthDate;
     }
 
-    public String getQuartiere() {
-        return quartiere;
+    public District getDistrict() {
+        return district;
     }
-
-
-
 }

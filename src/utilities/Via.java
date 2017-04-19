@@ -1,4 +1,4 @@
-package Utility;
+package utilities;
 
 /**
  * Created by Davide on 18/04/2017.
@@ -7,9 +7,9 @@ public class Via
 {
 
         private String nome;
-        private Quartiere quartiere;
+        private District quartiere;
 
-	public Via(String nome, Quartiere quartiere)
+	public Via(String nome, District quartiere)
         {
             this.nome = nome;
             this.quartiere = quartiere;
@@ -23,11 +23,11 @@ public class Via
         this.nome = nome;
     }
 
-    public Quartiere getQuartiere() {
+    public District getQuartiere() {
         return quartiere;
     }
 
-    public void setQuartiere(Quartiere quartiere) {
+    public void setQuartiere(District quartiere) {
         this.quartiere = quartiere;
     }
 }

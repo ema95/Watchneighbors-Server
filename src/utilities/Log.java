@@ -1,39 +1,33 @@
-package Utility;
+package utilities;
 
-/**
- * Created by Davide on 18/04/2017.
- */
 public class Log {
 
-    private int id;
-    private int userID;
+    private int logId;
+    private User user;
+    private String logDescription;
+    private Report report;
 
-    public int getId() {
-        return id;
-    }
-
-    public int getUserID() {
-        return userID;
-    }
-
-    public String getSegnalazione() {
-        return segnalazione;
-    }
-
-    public String getTipo() {
-        return tipo;
-    }
-
-    private String segnalazione;
-    private String tipo;
-
-    public Log(int id, int userID, String segnalazione, String tipo)
+    public Log(int logId, User user, Report report, String logDescription)
     {
-        this.id = id;
-        this.userID = userID;
-        this.segnalazione = segnalazione;
-        this.tipo = tipo;
+        this.logId = logId;
+        this.user = user;
+        this.report = report;
+        this.logDescription = logDescription;
     }
 
+    public int getLogId() {
+        return logId;
+    }
 
+    public User getUser() {
+        return user;
+    }
+
+    public Report getReport() {
+        return report;
+    }
+
+    public String getLogDescription() {
+        return logDescription;
+    }
 }

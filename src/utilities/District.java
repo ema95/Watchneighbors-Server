@@ -1,21 +1,14 @@
-package Utility;
+package utilities;
 
-/**
- * Created by Davide on 18/04/2017.
- */
-public class Quartiere
+public class District
 {
+    private String name;
 
-    private String nome;
-
-	public Quartiere(String nome)
+	public District(String name)
     {
-        this.nome = nome;
+        this.name = name;
     }
 
-    public String getNome()
-    {
-        return nome;
-    }
+    public String getName() {return name;}
 }
 
