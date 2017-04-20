@@ -1,8 +1,8 @@
 package utilities;
+import java.io.Serializable;
 import java.util.Date;
 
-public class Report
-{
+public class Report implements Serializable {
     private int id;
     private String state;
     private String outcome;
@@ -10,8 +10,7 @@ public class Report
     private User ownerUser;
     private User chargedUser;
 
-    public Report(int id, String state, String outcome, Date timestamp, User ownerUser, User chargedUser)
-    {
+    public Report(int id, String state, String outcome, Date timestamp, User ownerUser, User chargedUser) {
         this.id = id;
         this.state = state;
         this.outcome = outcome;

@@ -1,14 +1,12 @@
 package utilities;
 
 public class Log {
-
     private int logId;
     private User user;
     private String logDescription;
     private Report report;
 
-    public Log(int logId, User user, Report report, String logDescription)
-    {
+    public Log(int logId, User user, Report report, String logDescription) {
         this.logId = logId;
         this.user = user;
         this.report = report;

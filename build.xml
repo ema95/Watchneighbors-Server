@@ -1,0 +1,20 @@
+<project name="Watchneighbors-Server" default="run">
+
+    <path id="classpath">
+        <fileset dir="build" includes="**/*.jar"/>
+    </path>
+
+    <target name="compile">
+        <mkdir dir="build/classes"/>
+        <javac srcdir="./src" includeantruntime="false"/>
+    </target>
+
+    <target name="run" depends="compile">
+        <java classname="skeleton.MultiServer" fork="true">
+            <classpath>
+                <path refid="classpath"/>
+            </classpath>
+        </java>
+    </target>
+
+</project>
