@@ -44,8 +44,8 @@ public class Skeleton extends Thread implements ServerInterface {
     }
 
     @Override
-    public int createReport(Report r) throws IOException {
-        return 0;
+    public Report createReport() throws IOException {
+        return null;
     }
 
     @Override
