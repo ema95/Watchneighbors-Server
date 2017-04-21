@@ -16,8 +16,8 @@ public class RealServer implements ServerInterface {
     }
 
     @Override
-    public int createUser(User user) throws IOException {
-        return 0;
+    public User createUser() throws IOException {
+        return null;
     }
 
     @Override

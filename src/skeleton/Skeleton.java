@@ -22,8 +22,10 @@ public class Skeleton extends Thread implements ServerInterface {
     }
 
     @Override
-    public int createUser(User user) throws IOException {
-        return 0;
+    public User createUser() throws IOException {
+        User user=server.createUser();
+
+        return user;
     }
 
     @Override
