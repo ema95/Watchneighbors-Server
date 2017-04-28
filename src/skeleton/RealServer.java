@@ -19,8 +19,14 @@ public class RealServer implements ServerInterface {
     @Override
     public int createUser(User user) throws IOException{
         boolean result=false;
+        boolean connectionStatus;
+        connectionStatus=controller.connect();
+        //check connection status
+        if(!connectionStatus)
+            return 0;
         try{
             result=controller.createUser(user);
+            controller.close();
         }catch(SQLException e){
             System.out.println("Error during creation");
         }

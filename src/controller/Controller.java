@@ -12,14 +12,12 @@ public class Controller {
             connection=DriverManager.getConnection(db_url,"test_login","test");
             System.out.println("connected to database WachneighborsDB");
         }catch(Exception e){
-            System.out.println("Error during insertion");
-            return false;
+            e.printStackTrace();
         }
-        return true;
+        return connection==null ? false : true ;
     }
 
     public boolean createUser(User user) throws SQLException{
-        Statement createUserStatement=connection.createStatement();
         PreparedStatement preparedStatement=connection.prepareStatement(Queries.INSERT_USER_QUERY);
         user.prepareStatement(preparedStatement);
         int result=preparedStatement.executeUpdate();
@@ -31,6 +29,7 @@ public class Controller {
     public boolean createReport(){
         return true;
     }
-    public void close() throws SQLException { connection.close();}
-
+    public void close() throws SQLException {
+        System.out.println("Disconneted from database");
+        connection.close();}
 }
