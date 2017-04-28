@@ -22,10 +22,9 @@ public class Skeleton extends Thread implements ServerInterface {
                     operation=(String) o;
                     if(o.equals(Message.CREATE_USER)){
                         User user=(User) objectInputStream.readObject();
-                        this.createUser(user);
+                        server.createUser(user);
                     }else if(o.equals(Message.UPDATE_USER)){
-                        User user=(User) objectInputStream.readObject();
-                        this.updateUser(user);
+
                     }else if(o.equals(Message.DELETE_USER)){
 
                     }else if(o.equals(Message.CREATE_REPORT)){

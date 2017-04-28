@@ -1,7 +1,7 @@
 package controller;
 import utilities.*;
-
 import java.sql.*;
+
 public class Controller {
     private static final String db_url="jdbc:postgresql://localhost:5432/WatchneighborsDB";
     private Connection connection;
@@ -20,8 +20,10 @@ public class Controller {
 
     public boolean createUser(User user) throws SQLException{
         Statement createUserStatement=connection.createStatement();
-
-        return true;
+        PreparedStatement preparedStatement=connection.prepareStatement(Queries.INSERT_USER_QUERY);
+        user.prepareStatement(preparedStatement);
+        int result=preparedStatement.executeUpdate();
+        return result==1 ? true : false;
     }
     public boolean deleteUser(){
         return true;
@@ -29,5 +31,6 @@ public class Controller {
     public boolean createReport(){
         return true;
     }
+    public void close() throws SQLException { connection.close();}
 
 }

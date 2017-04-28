@@ -2,22 +2,29 @@ package skeleton;
 
 import utilities.Report;
 import utilities.User;
+import controller.*;
 
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.sql.SQLException;
 
 
 public class RealServer implements ServerInterface {
+    private Controller controller;
     public RealServer(){
-        /*
-        Eventuali inizializzazioni
-         */
+        controller=new Controller();
     }
 
     @Override
-    public int createUser(User user) throws IOException {
-        return 0;
+    public int createUser(User user) throws IOException{
+        boolean result=false;
+        try{
+            result=controller.createUser(user);
+        }catch(SQLException e){
+            System.out.println("Error during creation");
+        }
+        return result == true ? 1 : 0 ;
     }
 
     @Override
