@@ -16,8 +16,8 @@ public class RealServer implements ServerInterface {
     }
 
     @Override
-    public User createUser() throws IOException {
-        return null;
+    public int createUser(User user) throws IOException {
+        return 0;
     }
 
     @Override
@@ -36,8 +36,8 @@ public class RealServer implements ServerInterface {
     }
 
     @Override
-    public Report createReport() throws IOException {
-        return null;
+    public int createReport(Report report) throws IOException {
+        return 0;
     }
 
     @Override

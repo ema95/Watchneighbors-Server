@@ -1,31 +1,63 @@
 package skeleton;
 
+import utilities.Message;
 import utilities.Report;
 import utilities.User;
-
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.io.IOException;
+import java.io.*;
 import java.net.Socket;
 
 public class Skeleton extends Thread implements ServerInterface {
     private Socket socket;
     private ServerInterface server;
-    DataInputStream in;
-    DataOutputStream out;
+    private String operation;
+    private ObjectOutputStream objectOutputStream;
+    private ObjectInputStream objectInputStream;
 
+    public void run(){
+        while(true){
+            try{
+                System.out.println("Connection Accepted"+socket);
+                Object o= objectInputStream.readObject();
+                if(o instanceof String){
+                    operation=(String) o;
+                    if(o.equals(Message.CREATE_USER)){
+                        User user=(User) objectInputStream.readObject();
+                        this.createUser(user);
+                    }else if(o.equals(Message.UPDATE_USER)){
+                        User user=(User) objectInputStream.readObject();
+                        this.updateUser(user);
+                    }else if(o.equals(Message.DELETE_USER)){
+
+                    }else if(o.equals(Message.CREATE_REPORT)){
+
+                    } else if (o.equals(Message.UPDATE_REPORT)) {
+
+                    }else if(o.equals(Message.LOGIN)){
+
+                    }else if(o.equals(Message.CLOSE)){
+
+                    }
+                }
+            }catch(ClassNotFoundException e){
+                e.printStackTrace();
+            }catch(IOException e){
+                e.printStackTrace();
+            }
+        }
+    }
     public Skeleton(Socket socket) throws IOException {
         this.socket=socket;
         server=new RealServer();
-        in=new DataInputStream(socket.getInputStream());
-        out=new DataOutputStream(socket.getOutputStream());
+        objectOutputStream =new ObjectOutputStream(socket.getOutputStream());
+        objectInputStream =new ObjectInputStream(socket.getInputStream());
     }
 
     @Override
-    public User createUser() throws IOException {
-        User user=server.createUser();
-
-        return user;
+    public int createUser(User user) throws IOException {
+        int resultCode=server.createUser(user);
+        objectOutputStream.writeObject(resultCode);
+        objectOutputStream.flush();
+        return resultCode;
     }
 
     @Override
@@ -35,6 +67,7 @@ public class Skeleton extends Thread implements ServerInterface {
 
     @Override
     public int updateUser(User user) throws IOException {
+        System.out.println("Aggiorna User");
         return 0;
     }
 
@@ -44,8 +77,8 @@ public class Skeleton extends Thread implements ServerInterface {
     }
 
     @Override
-    public Report createReport() throws IOException {
-        return null;
+    public int createReport(Report report) throws IOException {
+        return 0;
     }
 
     @Override
@@ -55,6 +88,8 @@ public class Skeleton extends Thread implements ServerInterface {
 
     @Override
     public void close() throws IOException {
-
+        server.close();
+        objectOutputStream.close();
+        objectInputStream.close();
     }
 }
