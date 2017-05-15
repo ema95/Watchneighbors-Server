@@ -7,10 +7,12 @@ public class Report implements Serializable {
     public enum STATE {OPEN, CLOSED, NOT_RETREIVED};
     private int id;
     private STATE state;
+    private String description;// to add in the db table
     private String outcome;
     private String timestamp;
     private User ownerUser;
     private User chargedUser;
+    private Street street; // to add in the db table
 
     public Report(int id,STATE state, String outcome, String timestamp, User ownerUser, User chargedUser) {
         this.id = id;
@@ -32,4 +34,8 @@ public class Report implements Serializable {
     public User getOwnerUser() { return ownerUser; }
 
     public User getChargedUser() { return chargedUser; }
+
+    public String getDescription() { return description; }
+
+    public Street getStreet() { return street; }
 }

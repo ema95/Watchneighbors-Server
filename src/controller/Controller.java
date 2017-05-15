@@ -18,7 +18,7 @@ public class Controller {
         return this.connection != null;
     }
 
-    public boolean insertUserIntoDB(User user){
+    public synchronized boolean insertUserIntoDB(User user){
         int result;
         try{
             PreparedStatement preparedStatement=connection.prepareStatement(Queries.INSERT_USER_QUERY);
