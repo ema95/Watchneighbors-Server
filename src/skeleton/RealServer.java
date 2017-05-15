@@ -1,13 +1,12 @@
 package skeleton;
 
-import utilities.Report;
-import utilities.User;
+import models.Report;
+import models.User;
 import controller.*;
 
 import java.io.IOException;
-import java.net.ServerSocket;
-import java.net.Socket;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 
 public class RealServer implements ServerInterface {
@@ -19,18 +18,17 @@ public class RealServer implements ServerInterface {
     @Override
     public int createUser(User user) throws IOException{
         boolean result=false;
-        boolean connectionStatus;
-        connectionStatus=controller.connect();
-        //check connection status
-        if(!connectionStatus)
+        if(!controller.connect()) {
+            System.out.println("Connection error");
             return 0;
+        }
         try{
-            result=controller.createUser(user);
+            result=controller.insertUserIntoDB(user);
             controller.close();
         }catch(SQLException e){
             System.out.println("Error during creation");
         }
-        return result == true ? 1 : 0 ;
+        return result ? 1 : 0 ;
     }
 
     @Override
@@ -61,5 +59,9 @@ public class RealServer implements ServerInterface {
     @Override
     public void close() throws IOException {
 
+    }
+    @Override
+    public ArrayList<Report> getAllReport() throws IOException{
+        return null;
     }
 }

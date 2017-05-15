@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<Utenti>
+    <User1>
+        <nome>Emanuele</nome>
+        <cognome>Calzavara</cognome>
+        <DataNascita>1995-09-26</DataNascita>
+        <quartiere>varese</quartiere>
+        <email>ema.95@gmail.com</email>
+    </User1>
+
+    <User2>
+        <nome>Gianni</nome>
+        <cognome>Giannino</cognome>
+        <DataNascita>1990-11-11</DataNascita>
+        <quartiere>milano</quartiere>
+        <email>gianni@gogo.it</email>
+    </User2>
+
+</Utenti>

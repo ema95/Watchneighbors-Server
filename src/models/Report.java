@@ -1,16 +1,18 @@
-package utilities;
+package models;
 import java.io.Serializable;
 import java.util.Date;
 
 public class Report implements Serializable {
+
+    public enum STATE {OPEN, CLOSED, NOT_RETREIVED};
     private int id;
-    private String state;
+    private STATE state;
     private String outcome;
-    private Date timestamp;
+    private String timestamp;
     private User ownerUser;
     private User chargedUser;
 
-    public Report(int id, String state, String outcome, Date timestamp, User ownerUser, User chargedUser) {
+    public Report(int id,STATE state, String outcome, String timestamp, User ownerUser, User chargedUser) {
         this.id = id;
         this.state = state;
         this.outcome = outcome;
@@ -21,11 +23,11 @@ public class Report implements Serializable {
 
     public int getId() { return id; }
 
-    public String getState() { return state; }
+    public String getState() { return state.toString(); }
 
     public String getOutcome() { return outcome; }
 
-    public Date getTimestamp() { return timestamp; }
+    public String getTimestamp() { return timestamp; }
 
     public User getOwnerUser() { return ownerUser; }
 

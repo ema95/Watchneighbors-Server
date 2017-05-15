@@ -1,10 +1,11 @@
 package skeleton;
 
-import utilities.Message;
-import utilities.Report;
-import utilities.User;
+import models.Message;
+import models.Report;
+import models.User;
 import java.io.*;
 import java.net.Socket;
+import java.util.ArrayList;
 
 public class Skeleton extends Thread implements ServerInterface {
     private Socket socket;
@@ -12,31 +13,64 @@ public class Skeleton extends Thread implements ServerInterface {
     private String operation;
     private ObjectOutputStream objectOutputStream;
     private ObjectInputStream objectInputStream;
+    /*
+     code used to communicate the result of an operation
+     1 if the operation is successful, 0 otherwise
+     */
+    private int resultCode;
 
     public void run(){
         while(true){
             try{
                 System.out.println("Connection Accepted"+socket);
-                Object o= objectInputStream.readObject();
-                if(o instanceof String){
-                    operation=(String) o;
-                    if(o.equals(Message.CREATE_USER)){
-                        User user=(User) objectInputStream.readObject();
-                        int result=server.createUser(user);
-                        //1 if the user was correctly inserted 0 otherwise
-                        objectOutputStream.writeObject(result);
-                    }else if(o.equals(Message.UPDATE_USER)){
+                Object receivedObject= objectInputStream.readObject();
+                if(receivedObject instanceof String){
+                    operation=(String) receivedObject;
+                    if(receivedObject.equals(Message.CREATE_USER)){
 
-                    }else if(o.equals(Message.DELETE_USER)){
+                        User user= (User)objectInputStream.readObject();
+                        resultCode=server.createUser(user);
+                        objectOutputStream.writeObject(resultCode);
 
-                    }else if(o.equals(Message.CREATE_REPORT)){
+                    }else if(receivedObject.equals(Message.UPDATE_USER)){
 
-                    } else if (o.equals(Message.UPDATE_REPORT)) {
+                        User user= (User)objectInputStream.readObject();
+                        resultCode=server.updateUser(user);
+                        objectOutputStream.writeObject(resultCode);
 
-                    }else if(o.equals(Message.LOGIN)){
+                    }else if(receivedObject.equals(Message.DELETE_USER)){
 
-                    }else if(o.equals(Message.CLOSE)){
+                        User user = (User) objectInputStream.readObject();
+                        resultCode= server.deleteUser(user);
+                        objectOutputStream.writeObject(resultCode);
 
+                    }else if(receivedObject.equals(Message.CREATE_REPORT)){
+
+                        Report report= (Report)objectInputStream.readObject();
+                        resultCode = server.createReport(report);
+                        objectOutputStream.writeObject(resultCode);
+
+                    } else if (receivedObject.equals(Message.UPDATE_REPORT)) {
+
+                        Report report = (Report)objectInputStream.readObject();
+                        server.updateReport(report);
+                        objectOutputStream.writeObject(resultCode);
+
+                    }else if(receivedObject.equals(Message.LOGIN)){
+
+                        User user = (User) objectInputStream.readObject();
+                        //resultCode=server.login(user.getUserID(),user.getPassword());
+
+                    }else if(receivedObject.equals(Message.SELECT_ALL_REPORT)){
+
+                        ArrayList<Report> allReport= new ArrayList<Report>();
+                        allReport=server.getAllReport();
+                        objectOutputStream.writeObject(allReport);
+
+
+                    }else if(receivedObject.equals(Message.CLOSE)){
+
+                        server.close();
                     }
                 }
             }catch(ClassNotFoundException e){
@@ -85,6 +119,10 @@ public class Skeleton extends Thread implements ServerInterface {
     @Override
     public int updateReport(Report r) throws IOException {
         return 0;
+    }
+    @Override
+    public ArrayList<Report> getAllReport() throws IOException{
+        return null;
     }
 
     @Override

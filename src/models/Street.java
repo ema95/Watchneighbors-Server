@@ -1,4 +1,4 @@
-package utilities;
+package models;
 
 public class Street {
     private String name;
