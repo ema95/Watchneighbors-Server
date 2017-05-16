@@ -1,6 +1,5 @@
 package models;
 import java.io.Serializable;
-import java.util.Date;
 
 public class Report implements Serializable {
 
@@ -10,17 +9,21 @@ public class Report implements Serializable {
     private String description;// to add in the db table
     private String outcome;
     private String timestamp;
-    private User ownerUser;
-    private User chargedUser;
-    private Street street; // to add in the db table
+    private String ownerUserId;
+    private String chargedUserId;
+    private String street; // to add in the db table
+    private double latitude;
+    private double longitude;
 
-    public Report(int id,STATE state, String outcome, String timestamp, User ownerUser, User chargedUser) {
+    public Report(int id, STATE state, String outcome,String description, String timestamp, String ownerUserId, String chargedUserId,String street) {
         this.id = id;
         this.state = state;
+        this.description = description;
         this.outcome = outcome;
         this.timestamp = timestamp;
-        this.ownerUser = ownerUser;
-        this.chargedUser = chargedUser;
+        this.ownerUserId = ownerUserId;
+        this.chargedUserId = chargedUserId;
+        this.street= street;
     }
 
     public int getId() { return id; }
@@ -31,11 +34,11 @@ public class Report implements Serializable {
 
     public String getTimestamp() { return timestamp; }
 
-    public User getOwnerUser() { return ownerUser; }
+    public String getOwnerUserId() { return ownerUserId; }
 
-    public User getChargedUser() { return chargedUser; }
+    public String getChargedUserId() { return chargedUserId; }
 
     public String getDescription() { return description; }
 
-    public Street getStreet() { return street; }
+    public String getStreet() { return street; }
 }

@@ -53,11 +53,11 @@ public class Controller_test extends TestCase {
         assert controller.deleteUser(user);
     }
 
-    @org.junit.Test
-    public void testInsertReportIntoDB(){
-        Report report = new Report(1, Report.STATE.NOT_RETREIVED, null, "2013-12-13", userXXX, userXXX );
-        controller.connect();
-        assert controller.insertReportIntoDB(report);
-    }
+//    @org.junit.Test
+//    public void testInsertReportIntoDB(){
+//        Report report = new Report(1, Report.STATE.NOT_RETREIVED, null, "2013-12-13", userXXX, userXXX );
+//        controller.connect();
+//        assert controller.insertReportIntoDB(report);
+//    }
 
 }

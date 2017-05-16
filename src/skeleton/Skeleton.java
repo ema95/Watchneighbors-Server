@@ -27,10 +27,11 @@ public class Skeleton extends Thread implements ServerInterface {
                 if(receivedObject instanceof String){
                     operation=(String) receivedObject;
                     if(receivedObject.equals(Message.CREATE_USER)){
-
+                        System.out.println("Receveid message: "+Message.CREATE_USER);
                         User user= (User)objectInputStream.readObject();
                         resultCode=server.createUser(user);
                         objectOutputStream.writeObject(resultCode);
+                        System.out.println("finished inseting user");
 
                     }else if(receivedObject.equals(Message.UPDATE_USER)){
 
