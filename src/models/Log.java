@@ -1,20 +1,18 @@
 package models;
 
+/**
+ * Class used to manipulate a Log object
+ */
 public class Log {
-    private int logId;
     private User user;
     private String logDescription;
     private Report report;
+    private String timestamp;
 
-    public Log(int logId, User user, Report report, String logDescription) {
-        this.logId = logId;
+    public Log(User user, Report report, String logDescription) {
         this.user = user;
         this.report = report;
         this.logDescription = logDescription;
-    }
-
-    public int getLogId() {
-        return logId;
     }
 
     public User getUser() {
@@ -27,5 +25,9 @@ public class Log {
 
     public String getLogDescription() {
         return logDescription;
+    }
+
+    public String getTimestamp() {
+        return timestamp;
     }
 }

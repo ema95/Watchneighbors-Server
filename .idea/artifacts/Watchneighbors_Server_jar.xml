@@ -1,0 +1,15 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Watchneighbors-Server:jar">
+    <output-path>$USER_HOME$/Scaricati</output-path>
+    <root id="archive" name="Watchneighbors-Server.jar">
+      <element id="module-output" name="Watchneighbors-Server" />
+      <element id="extracted-dir" path="$USER_HOME$/Scaricati/dbunit-2.4.9.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Scaricati/SFL4J jar/slf4j-api-1.7.25.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Scaricati/commons-logging-1.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Scaricati/postgresql-42.0.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Scaricati/junit-4.12.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Scaricati/SFL4J jar/slf4j-jcl-1.7.25.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/DB_Jar/javax.mail1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

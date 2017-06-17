@@ -1,20 +1,36 @@
-<project name="Watchneighbors-Server" default="run">
-
-    <path id="classpath">
-        <fileset dir="build" includes="**/*.jar"/>
+<project basedir="." name="Watchneighbors-Server" default="build-project">
+    <path id="Watchneighbors-Server.path">
+        <pathelement location="bin"/>
+        <pathelement location="./DB_Jar/postgresql-42.0.0.jar"/>
+        <pathelement location="./DB_Jar/javax.mail1.jar"/>
     </path>
-
-    <target name="compile">
-        <mkdir dir="build/classes"/>
-        <javac srcdir="./src" includeantruntime="false"/>
+    <!--Initialize the directory for compiled classes -->
+    <target name="init" depends="clean">
+        <mkdir dir="bin"/>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="init" name="build-project">
+        <javac destdir="bin" includeantruntime="false" >
+            <src path="src"/>
+            <classpath refid="Watchneighbors-Server.path"/>
+        </javac>
+    </target>
+    <target name="runServer" depends="build-project">
+        <java classname="skeleton.MultiServer" failonerror="true" fork="yes">
+            <classpath refid="Watchneighbors-Server.path"/>
+        </java>
     </target>
 
-    <target name="run" depends="compile">
-        <java classname="skeleton.MultiServer" fork="true">
-            <classpath>
-                <path refid="classpath"/>
-            </classpath>
-        </java>
+    <target>
+        <sql driver="postgresql-42.0.0.jar"
+             url="${}"
+             userid=""
+             password=""
+        />
+
+
     </target>
 
 </project>

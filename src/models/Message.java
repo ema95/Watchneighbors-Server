@@ -1,5 +1,8 @@
 package models;
 
+/**
+ * Class used to manipulate the messages exchange between client and server
+ */
 public class Message {
     public static final String CREATE_USER="CREATE USER";
     public static final String UPDATE_USER="UPDATE USER";

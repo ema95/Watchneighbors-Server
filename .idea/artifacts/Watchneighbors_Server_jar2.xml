@@ -1,0 +1,23 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Watchneighbors-Server:jar2">
+    <output-path>$PROJECT_DIR$/out/artifacts/Watchneighbors_Server_jar2</output-path>
+    <root id="archive" name="Watchneighbors-Server_jar2.jar">
+      <element id="archive" name="Watchneighbors-Server.jar">
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$USER_HOME$/Scaricati/ProvaJar/META-INF/MANIFEST.MF" />
+        </element>
+        <element id="module-output" name="Watchneighbors-Server" />
+      </element>
+      <element id="file-copy" path="$USER_HOME$/Scaricati/dbunit-2.4.9.jar" />
+      <element id="file-copy" path="$USER_HOME$/Scaricati/SFL4J jar/slf4j-api-1.7.25.jar" />
+      <element id="file-copy" path="$USER_HOME$/Scaricati/commons-logging-1.2.jar" />
+      <element id="file-copy" path="$USER_HOME$/Scaricati/postgresql-42.0.0.jar" />
+      <element id="file-copy" path="$USER_HOME$/Scaricati/junit-4.12.jar" />
+      <element id="file-copy" path="$USER_HOME$/Scaricati/SFL4J jar/slf4j-jcl-1.7.25.jar" />
+      <element id="library" level="project" name="javax.mail" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$USER_HOME$/Scaricati/ProvaJar/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>
