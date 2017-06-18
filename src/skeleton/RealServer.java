@@ -86,6 +86,10 @@ public class RealServer implements ServerInterface {
         boolean result = false;
         if (!controller.connect())
             System.out.println("Connection error");
+        if(controller.checkAlreadyExistingMail(user.getEmail())){
+            System.out.println("Duplicate mail: user can't be updated");
+            return 2;
+        }
         try {
             result = controller.updateUser(user);
             String message = "Updated user: " + user.getUserID();

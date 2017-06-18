@@ -2,22 +2,22 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="Watchneighbors-Server:jar" />
-      <artifact name="Watchneighbors-Server:jar2" />
+      <artifact name="Watchneighbors-Server:jar3" />
     </artifacts-to-build>
   </component>
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/src/skeleton/Skeleton.java" line="147" mnemonic="7" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8930bc59-91c8-4195-ae4f-0d62b2dbffed" name="Default" comment="finito">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WN-Client.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Watchneighbors-Server/controller/Controller.class" afterPath="$PROJECT_DIR$/out/production/Watchneighbors-Server/controller/Controller.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Watchneighbors-Server/mailSender/mailSender.class" afterPath="$PROJECT_DIR$/out/production/Watchneighbors-Server/mailSender/mailSender.class" />
+    <list default="true" id="8930bc59-91c8-4195-ae4f-0d62b2dbffed" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WN-Client.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WN-Server.jar" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/mailSender/mailSender.class" afterPath="$PROJECT_DIR$/bin/mailSender/mailSender.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/skeleton/RealServer.class" afterPath="$PROJECT_DIR$/bin/skeleton/RealServer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Watchneighbors-Server/skeleton/RealServer.class" afterPath="$PROJECT_DIR$/out/production/Watchneighbors-Server/skeleton/RealServer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.xml" afterPath="$PROJECT_DIR$/build.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/Controller.java" afterPath="$PROJECT_DIR$/src/controller/Controller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mailSender/mailSender.java" afterPath="$PROJECT_DIR$/src/mailSender/mailSender.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skeleton/RealServer.java" afterPath="$PROJECT_DIR$/src/skeleton/RealServer.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,11 +30,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controller/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1611">
-              <caret line="107" column="35" lean-forward="true" selection-start-line="107" selection-start-column="35" selection-end-line="107" selection-end-column="35" />
+            <state relative-caret-position="92">
+              <caret line="88" column="13" lean-forward="false" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="13" />
               <folding>
                 <element signature="method#Controller#0;class#Controller#0" expanded="false" />
                 <element signature="method#getSingletonController#0;class#Controller#0" expanded="false" />
@@ -44,11 +44,36 @@
                 <element signature="method#getAllReport#0;class#Controller#0" expanded="false" />
                 <element signature="method#insertLogWithoutReport#0;class#Controller#0" expanded="false" />
                 <element signature="method#insertLog#0;class#Controller#0" expanded="false" />
-                <element signature="method#checkAlreadyExistingMail#0;class#Controller#0" expanded="false" />
                 <element signature="method#retrieveUserByIdFromDb#0;class#Controller#0" expanded="false" />
                 <element signature="method#retrieveReportByIdFromDb#0;class#Controller#0" expanded="false" />
                 <element signature="method#close#0;class#Controller#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RealServer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/skeleton/RealServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-640">
+              <caret line="90" column="21" lean-forward="true" selection-start-line="90" selection-start-column="21" selection-end-line="90" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#deleteUser#0;class#RealServer#0" expanded="false" />
+                <element signature="method#login#0;class#RealServer#0" expanded="false" />
+                <element signature="method#close#0;class#RealServer#0" expanded="false" />
+                <element signature="method#getAllReport#0;class#RealServer#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/build.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1100">
+              <caret line="67" column="10" lean-forward="true" selection-start-line="67" selection-start-column="10" selection-end-line="67" selection-end-column="10" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -58,7 +83,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="220">
               <caret line="16" column="108" lean-forward="false" selection-start-line="16" selection-start-column="108" selection-end-line="16" selection-end-column="108" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -99,6 +126,9 @@
       <find>connect</find>
       <find>build-project</find>
       <find>connect()</find>
+      <find>checkAl</find>
+      <find>checkALrea</find>
+      <find>check</find>
     </findStrings>
     <dirStrings>
       <dir>$USER_HOME$/Scaricati/postgresql-42.0.0.jar</dir>
@@ -150,12 +180,12 @@
         <option value="$PROJECT_DIR$/src/models/Report.java" />
         <option value="$PROJECT_DIR$/src/models/Log.java" />
         <option value="$PROJECT_DIR$/src/controller/Queries.java" />
-        <option value="$PROJECT_DIR$/src/skeleton/RealServer.java" />
         <option value="$PROJECT_DIR$/src/skeleton/Skeleton.java" />
         <option value="$PROJECT_DIR$/createDB.sql" />
         <option value="$PROJECT_DIR$/initDB.sql" />
         <option value="$PROJECT_DIR$/src/mailSender/mailSender.java" />
         <option value="$PROJECT_DIR$/src/controller/Controller.java" />
+        <option value="$PROJECT_DIR$/src/skeleton/RealServer.java" />
         <option value="$PROJECT_DIR$/build.xml" />
       </list>
     </option>
@@ -181,9 +211,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -193,6 +220,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Watchneighbors-Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Watchneighbors-Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Watchneighbors-Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skeleton" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -244,6 +289,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -252,6 +300,7 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -712,7 +761,14 @@
       <option name="project" value="LOCAL" />
       <updated>1491944241313</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="finito">
+      <created>1497803386621</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1497803386621</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -758,6 +814,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -768,19 +825,19 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.54798764" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32817337" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32817337" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5650155" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3482972" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20079681" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20398407" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24940239" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -821,14 +878,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-field">
-          <url>file://$PROJECT_DIR$/src/skeleton/RealServer.java</url>
-          <line>15</line>
-          <properties field="controller" class="skeleton.RealServer" />
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="18" />
     </breakpoint-manager>
     <watches-manager />
@@ -987,21 +1036,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/skeleton/RealServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#createUser#0;class#RealServer#0" expanded="false" />
-            <element signature="method#deleteUser#0;class#RealServer#0" expanded="false" />
-            <element signature="method#login#0;class#RealServer#0" expanded="false" />
-            <element signature="method#close#0;class#RealServer#0" expanded="false" />
-            <element signature="method#getAllReport#0;class#RealServer#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/models/Report.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
@@ -1022,17 +1056,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#985#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mailSender/mailSender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="16" column="108" lean-forward="false" selection-start-line="16" selection-start-column="108" selection-end-line="16" selection-end-column="108" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1040,24 +1063,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="28" column="62" lean-forward="true" selection-start-line="28" selection-start-column="62" selection-end-line="28" selection-end-column="62" />
-          <folding>
-            <element signature="e#0#2151#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.xml">
+    <entry file="file://$PROJECT_DIR$/src/mailSender/mailSender.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1136">
-          <caret line="74" column="32" lean-forward="false" selection-start-line="74" selection-start-column="32" selection-end-line="74" selection-end-column="32" />
-          <folding />
+        <state relative-caret-position="220">
+          <caret line="16" column="108" lean-forward="false" selection-start-line="16" selection-start-column="108" selection-end-line="16" selection-end-column="108" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1611">
-          <caret line="107" column="35" lean-forward="true" selection-start-line="107" selection-start-column="35" selection-end-line="107" selection-end-column="35" />
+        <state relative-caret-position="92">
+          <caret line="88" column="13" lean-forward="false" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="13" />
           <folding>
             <element signature="method#Controller#0;class#Controller#0" expanded="false" />
             <element signature="method#getSingletonController#0;class#Controller#0" expanded="false" />
@@ -1067,11 +1089,32 @@
             <element signature="method#getAllReport#0;class#Controller#0" expanded="false" />
             <element signature="method#insertLogWithoutReport#0;class#Controller#0" expanded="false" />
             <element signature="method#insertLog#0;class#Controller#0" expanded="false" />
-            <element signature="method#checkAlreadyExistingMail#0;class#Controller#0" expanded="false" />
             <element signature="method#retrieveUserByIdFromDb#0;class#Controller#0" expanded="false" />
             <element signature="method#retrieveReportByIdFromDb#0;class#Controller#0" expanded="false" />
             <element signature="method#close#0;class#Controller#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/skeleton/RealServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-640">
+          <caret line="90" column="21" lean-forward="true" selection-start-line="90" selection-start-column="21" selection-end-line="90" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#deleteUser#0;class#RealServer#0" expanded="false" />
+            <element signature="method#login#0;class#RealServer#0" expanded="false" />
+            <element signature="method#close#0;class#RealServer#0" expanded="false" />
+            <element signature="method#getAllReport#0;class#RealServer#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1100">
+          <caret line="67" column="10" lean-forward="true" selection-start-line="67" selection-start-column="10" selection-end-line="67" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1086,6 +1129,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

@@ -61,15 +61,6 @@
         </sql>
     </target>
 
-    <target name="createJar" depends="build-project">
-       <jar destfile="./WN-Server.jar">
-           <fileset dir="./DB_Jar"/>
-           <fileset dir="./bin"/>
-           <manifest>
-               <attribute name="Main-Class" value="skeleton.MultiServer"/>
-           </manifest>
-       </jar>
-    </target>
 
     <target name="runClient">
         <java jar="WB-Client.jar" fork="true" spawn="true"/>
