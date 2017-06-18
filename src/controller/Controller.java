@@ -25,7 +25,7 @@ public class Controller {
 
     /**
      *
-     * @return
+     * @return true if connection to DB works correctly.
      */
     public synchronized boolean connect() {
         try {
@@ -45,8 +45,8 @@ public class Controller {
 
     /**
      *
-     * @param user
-     * @return
+     * @param user The user will be inserted into the DB.
+     * @return true if the "insert" action worked correctly.
      */
     public synchronized boolean insertUserIntoDB(User user) {
         System.out.println("entered insertUserIntoDB method of controller");
@@ -81,8 +81,8 @@ public class Controller {
 
     /**
      *
-     * @param user
-     * @return
+     * @param user The user will be updated with its new attributes.
+     * @return true if tha "update" action worked correctly.
      */
     public synchronized boolean updateUser(User user) {
         int result;
