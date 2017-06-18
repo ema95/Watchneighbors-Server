@@ -70,4 +70,8 @@
            </manifest>
        </jar>
     </target>
+
+    <target name="runClient">
+        <java jar="WB-Client.jar" fork="true" spawn="true"/>
+    </target>
 </project>

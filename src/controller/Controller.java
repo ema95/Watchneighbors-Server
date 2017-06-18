@@ -104,8 +104,8 @@ public class Controller {
 
     /**
      *
-     * @param user
-     * @return
+     * @param user The user to delete from the DB.
+     * @return true if the "delete" action worked correctly.
      */
     public synchronized boolean deleteUser(User user) {
         int result;
@@ -125,7 +125,7 @@ public class Controller {
      *
      * @param user
      * @param password
-     * @return
+     * @return The user having corresponding username and password if it exists, null otherwise.
      */
     public synchronized User login(String user, String password) {
         User resultUser = null;
@@ -159,7 +159,7 @@ public class Controller {
 
     /**
      *
-     * @param report
+     * @param report The report will be inserted in the DB.
      * @return
      */
     public synchronized boolean insertReportIntoDB(Report report) {
@@ -184,8 +184,8 @@ public class Controller {
 
     /**
      *
-     * @param report
-     * @return
+     * @param report The report will be updated in the DB.
+     * @return The operation status code.
      */
     public synchronized boolean updateReport(Report report) {
         System.out.println("Entered updateReport method of Controller");
@@ -207,7 +207,7 @@ public class Controller {
 
     /**
      *
-     * @return return a list containing all the Report stored in the database
+     * @return return a list containing all the Report stored in the database.
      */
     public synchronized ArrayList<Report> getAllReport() {
         ArrayList<Report> lsReport = new ArrayList<>();
@@ -237,7 +237,10 @@ public class Controller {
         }
     }
 
-
+    /**
+     *
+     * @param log The log will be inserted in the DB.
+     */
     public synchronized void insertLogWithoutReport(Log log) {
 
         try {
@@ -251,6 +254,10 @@ public class Controller {
         }
     }
 
+    /**
+     *
+     * @param log The log will be inserted in the DB.
+     */
     public synchronized  void insertLog(Log log){
         try{
             PreparedStatement preparedStatement = connection.prepareStatement(Queries.INSERT_LOG_QUERY);
@@ -266,8 +273,8 @@ public class Controller {
 
     /**
      *
-     * @param mail check if the mail already exists into the database
-     * @return Return true if the mail already exists
+     * @param mail check if the mail already exists into the database.
+     * @return Return true if the mail already exists.
      */
     public synchronized boolean checkAlreadyExistingMail(String mail) {
         boolean result = false;
@@ -292,8 +299,8 @@ public class Controller {
 
     /**
      *
-     * @param id
-     * @return
+     * @param id The id used to retrieve user from the DB.
+     * @return The user wit the id param.
      */
     public User retrieveUserByIdFromDb(String id) {
         User user=null;
@@ -322,6 +329,12 @@ public class Controller {
 
 
     }
+
+    /**
+     *
+     * @param id The id used to retrieve report from the DB.
+     * @return The report wit the id param.
+     */
     public Report retrieveReportByIdFromDb(int id){
         Report report = null;
         try {
@@ -349,7 +362,7 @@ public class Controller {
     }
 
     /**
-     *
+     * Close the connection to the DB.
      * @throws SQLException
      */
     public synchronized void close() throws SQLException {
