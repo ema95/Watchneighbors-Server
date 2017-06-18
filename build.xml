@@ -19,7 +19,7 @@
             <classpath refid="Watchneighbors-Server.path"/>
         </javac>
     </target>
-    <target name="runServer" depends="build-project,init-db">
+    <target name="runServer" depends="build-project">
         <java classname="skeleton.MultiServer" failonerror="true" fork="yes">
             <classpath refid="Watchneighbors-Server.path"/>
         </java>
@@ -60,8 +60,6 @@
             INSERT INTO district values ('S.Ambrogio');
         </sql>
     </target>
-
-
     <target name="runClient">
         <java jar="WB-Client.jar" fork="true" spawn="true"/>
     </target>
