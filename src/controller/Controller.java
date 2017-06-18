@@ -7,7 +7,8 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
 public class Controller {
-    private static final String db_url = "jdbc:postgresql://localhost:5432/WatchneighborsDB";
+    public  static final String DB_NAME = "watchneighborsdb";
+    private static final String db_url = "jdbc:postgresql://localhost:5432/"+DB_NAME;
     private Connection connection;
 
     private static Controller singletonController = null;

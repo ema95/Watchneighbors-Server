@@ -1,4 +1,6 @@
-<project basedir="." name="Watchneighbors-Server" default="build-project">
+<project basedir="." name="Watchneighbors-Server" default="runServer">
+    <property name="userid" value="test_login"/>
+    <property name="password" value="test"/>
     <path id="Watchneighbors-Server.path">
         <pathelement location="bin"/>
         <pathelement location="./DB_Jar/postgresql-42.0.0.jar"/>
@@ -8,7 +10,7 @@
     <target name="init" depends="clean">
         <mkdir dir="bin"/>
     </target>
-    <target name="clean">
+    <target name="clean" >
         <delete dir="bin"/>
     </target>
     <target depends="init" name="build-project">
@@ -17,20 +19,55 @@
             <classpath refid="Watchneighbors-Server.path"/>
         </javac>
     </target>
-    <target name="runServer" depends="build-project">
+    <target name="runServer" depends="build-project,init-db">
         <java classname="skeleton.MultiServer" failonerror="true" fork="yes">
             <classpath refid="Watchneighbors-Server.path"/>
         </java>
     </target>
 
-    <target>
-        <sql driver="postgresql-42.0.0.jar"
-             url="${}"
-             userid=""
-             password=""
-        />
+    <target name="create-db">
+        <sql driver="org.postgresql.Driver"
+             classpathref="Watchneighbors-Server.path"
+             url="jdbc:postgresql://localhost:5432/postgres"
+             userid="${userid}"
+             password="${password}"
+             autocommit="true">
 
-
+            CREATE DATABASE watchneighborsdb;
+        </sql>
     </target>
 
+    <target name="init-db" depends="create-db">
+        <sql driver="org.postgresql.Driver"
+             classpathref="Watchneighbors-Server.path"
+             url="jdbc:postgresql://localhost:5432/watchneighborsdb"
+             userid="${userid}"
+             password="${password}"
+             autocommit="true">
+
+            CREATE TABLE district(Name VARCHAR(20) PRIMARY KEY);
+
+            CREATE TABLE myuser(UserID VARCHAR(15) PRIMARY KEY,Name VARCHAR(20) NOT NULL,Surname VARCHAR(30) NOT NULL,birthdate DATE NOT NULL,email VARCHAR(30),password VARCHAR(30),district VARCHAR(30) REFERENCES District(Name) ON DELETE SET NULL ON UPDATE CASCADE,latitude float,longitude float);
+
+            CREATE TABLE report(ID BIGSERIAL PRIMARY KEY,State VARCHAR(20) NOT NULL,Outcome VARCHAR(20) DEFAULT NULL,Description VARCHAR(200),TimeStamp TIMESTAMP NOT NULL,ownerUser  VARCHAR(25) REFERENCES myuser(UserID) ON DELETE CASCADE ON UPDATE CASCADE,chargedUser VARCHAR(25) REFERENCES myuser(UserID) ON DELETE CASCADE ON UPDATE CASCADE DEFAULT NULL, latitude float,longitude float);
+
+            CREATE TABLE log(logid BIGSERIAL PRIMARY KEY,timestamp timestamp,message VARCHAR(150),userid VARCHAR(15) REFERENCES myuser(userid),reportid int REFERENCES report(id));
+
+            INSERT INTO district values ('Velate');
+
+            INSERT INTO district values ('Avigno');
+
+            INSERT INTO district values ('S.Ambrogio');
+        </sql>
+    </target>
+
+    <target name="createJar" depends="build-project">
+       <jar destfile="./WN-Server.jar">
+           <fileset dir="./DB_Jar"/>
+           <fileset dir="./bin"/>
+           <manifest>
+               <attribute name="Main-Class" value="skeleton.MultiServer"/>
+           </manifest>
+       </jar>
+    </target>
 </project>

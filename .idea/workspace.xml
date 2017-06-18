@@ -7,42 +7,23 @@
     </artifacts-to-build>
   </component>
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/skeleton/Skeleton.java" line="144" mnemonic="7" />
+    <bookmark url="file://$PROJECT_DIR$/src/skeleton/Skeleton.java" line="147" mnemonic="7" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8930bc59-91c8-4195-ae4f-0d62b2dbffed" name="Default" comment="creazione Skeleton,RealServer,MultiServer&#10;User e Report implementanto Serializable">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mailSender/mailSender.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Watchneighbors-Server/DBtestDataSet.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Watchneighbors-Server/models/Street.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Watchneighbors-Server/test/Controller_dbunit_test.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Watchneighbors-Server/test/Controller_test.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/DBtestDataSet.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/models/Street.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/Controller_dbunit_test.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/Controller_test.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/controller/Controller.class" afterPath="$PROJECT_DIR$/bin/controller/Controller.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/controller/Queries.class" afterPath="$PROJECT_DIR$/bin/controller/Queries.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/models/Log.class" afterPath="$PROJECT_DIR$/bin/models/Log.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/models/Report$STATE.class" afterPath="$PROJECT_DIR$/bin/models/Report$STATE.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/models/Report.class" afterPath="$PROJECT_DIR$/bin/models/Report.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/models/User.class" afterPath="$PROJECT_DIR$/bin/models/User.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/skeleton/RealServer.class" afterPath="$PROJECT_DIR$/bin/skeleton/RealServer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/skeleton/Skeleton.class" afterPath="$PROJECT_DIR$/bin/skeleton/Skeleton.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Watchneighbors-Server/controller/Controller.class" afterPath="$PROJECT_DIR$/out/production/Watchneighbors-Server/controller/Controller.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Watchneighbors-Server/controller/Queries.class" afterPath="$PROJECT_DIR$/out/production/Watchneighbors-Server/controller/Queries.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Watchneighbors-Server/models/District.class" afterPath="$PROJECT_DIR$/out/production/Watchneighbors-Server/models/District.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Watchneighbors-Server/models/Log.class" afterPath="$PROJECT_DIR$/out/production/Watchneighbors-Server/models/Log.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Watchneighbors-Server/models/Message.class" afterPath="$PROJECT_DIR$/out/production/Watchneighbors-Server/models/Message.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Watchneighbors-Server/models/Report$STATE.class" afterPath="$PROJECT_DIR$/out/production/Watchneighbors-Server/models/Report$STATE.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Watchneighbors-Server/models/Report.class" afterPath="$PROJECT_DIR$/out/production/Watchneighbors-Server/models/Report.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Watchneighbors-Server/models/User.class" afterPath="$PROJECT_DIR$/out/production/Watchneighbors-Server/models/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Watchneighbors-Server/skeleton/MultiServer.class" afterPath="$PROJECT_DIR$/out/production/Watchneighbors-Server/skeleton/MultiServer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Watchneighbors-Server/skeleton/RealServer.class" afterPath="$PROJECT_DIR$/out/production/Watchneighbors-Server/skeleton/RealServer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Watchneighbors-Server/skeleton/Skeleton.class" afterPath="$PROJECT_DIR$/out/production/Watchneighbors-Server/skeleton/Skeleton.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Watchneighbors-Server.iml" afterPath="$PROJECT_DIR$/Watchneighbors-Server.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.xml" afterPath="$PROJECT_DIR$/build.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/Controller.java" afterPath="$PROJECT_DIR$/src/controller/Controller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/Queries.java" afterPath="$PROJECT_DIR$/src/controller/Queries.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/models/District.java" afterPath="$PROJECT_DIR$/src/models/District.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/models/Log.java" afterPath="$PROJECT_DIR$/src/models/Log.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/models/Message.java" afterPath="$PROJECT_DIR$/src/models/Message.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/models/Report.java" afterPath="$PROJECT_DIR$/src/models/Report.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/models/User.java" afterPath="$PROJECT_DIR$/src/models/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skeleton/MultiServer.java" afterPath="$PROJECT_DIR$/src/skeleton/MultiServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skeleton/RealServer.java" afterPath="$PROJECT_DIR$/src/skeleton/RealServer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skeleton/Skeleton.java" afterPath="$PROJECT_DIR$/src/skeleton/Skeleton.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -59,8 +40,8 @@
       <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controller/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="189" column="69" lean-forward="false" selection-start-line="189" selection-start-column="69" selection-end-line="189" selection-end-column="69" />
+            <state relative-caret-position="100">
+              <caret line="9" column="43" lean-forward="false" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
               <folding>
                 <element signature="method#Controller#0;class#Controller#0" expanded="false" />
                 <element signature="method#getSingletonController#0;class#Controller#0" expanded="false" />
@@ -74,21 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Skeleton.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/skeleton/Skeleton.java">
+      <file leaf-file-name="build.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/build.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="58" column="80" lean-forward="false" selection-start-line="58" selection-start-column="80" selection-end-line="58" selection-end-column="80" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Report.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/models/Report.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1260">
-              <caret line="87" column="206" lean-forward="false" selection-start-line="87" selection-start-column="206" selection-end-line="87" selection-end-column="206" />
+            <state relative-caret-position="480">
+              <caret line="24" column="15" lean-forward="false" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -127,6 +98,9 @@
       <find>reateL</find>
       <find>retr</find>
       <find>updateRe</find>
+      <find>connect</find>
+      <find>build-project</find>
+      <find>connect()</find>
     </findStrings>
     <dirStrings>
       <dir>$USER_HOME$/Scaricati/postgresql-42.0.0.jar</dir>
@@ -170,7 +144,6 @@
         <option value="$PROJECT_DIR$/src/DBtestDataSet.xml" />
         <option value="$PROJECT_DIR$/src/models/Street.java" />
         <option value="$PROJECT_DIR$/src/test/Controller_test.java" />
-        <option value="$PROJECT_DIR$/build.xml" />
         <option value="$PROJECT_DIR$/src/skeleton/MultiServer.java" />
         <option value="$PROJECT_DIR$/src/models/Message.java" />
         <option value="$PROJECT_DIR$/src/models/District.java" />
@@ -181,8 +154,11 @@
         <option value="$PROJECT_DIR$/src/models/Log.java" />
         <option value="$PROJECT_DIR$/src/controller/Queries.java" />
         <option value="$PROJECT_DIR$/src/skeleton/RealServer.java" />
-        <option value="$PROJECT_DIR$/src/controller/Controller.java" />
         <option value="$PROJECT_DIR$/src/skeleton/Skeleton.java" />
+        <option value="$PROJECT_DIR$/createDB.sql" />
+        <option value="$PROJECT_DIR$/initDB.sql" />
+        <option value="$PROJECT_DIR$/src/controller/Controller.java" />
+        <option value="$PROJECT_DIR$/build.xml" />
       </list>
     </option>
   </component>
@@ -207,6 +183,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -215,89 +194,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Watchneighbors-Server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Watchneighbors-Server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Watchneighbors-Server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Watchneighbors-Server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="skeleton" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Watchneighbors-Server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Watchneighbors-Server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Watchneighbors-Server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Watchneighbors-Server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mailSender" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Watchneighbors-Server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Watchneighbors-Server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -315,11 +212,40 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Watchneighbors-Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Watchneighbors-Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skeleton" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Watchneighbors-Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Watchneighbors-Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -838,7 +764,6 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3482972" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -847,10 +772,10 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.54798764" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32817337" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.72136223" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3482972" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28605577" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20079681" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24940239" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -861,9 +786,13 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3482972" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.sql" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -910,21 +839,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/models/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/skeleton/Skeleton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/skeleton/RealServer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -1032,19 +946,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="27" column="22" lean-forward="true" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/skeleton/MultiServer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="9" column="3" lean-forward="false" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1059,7 +964,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="3" column="40" lean-forward="false" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1074,18 +978,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="939">
           <caret line="78" column="73" lean-forward="false" selection-start-line="78" selection-start-column="73" selection-end-line="78" selection-end-column="73" />
-          <folding>
-            <element signature="e#943#944#0" expanded="false" />
-            <element signature="e#972#973#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/Report.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="87" column="206" lean-forward="false" selection-start-line="87" selection-start-column="206" selection-end-line="87" selection-end-column="206" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1093,7 +985,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="12" column="25" lean-forward="false" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1108,10 +999,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="172">
           <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-          <folding>
-            <element signature="e#605#606#0" expanded="false" />
-            <element signature="e#637#638#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1119,7 +1006,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="489">
           <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1138,10 +1024,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/Report.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="87" column="206" lean-forward="false" selection-start-line="87" selection-start-column="206" selection-end-line="87" selection-end-column="206" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/skeleton/Skeleton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="12" column="42" lean-forward="false" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/initDB.sql" />
+    <entry file="file://$PROJECT_DIR$/createDB.sql" />
     <entry file="file://$PROJECT_DIR$/src/controller/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="189" column="69" lean-forward="false" selection-start-line="189" selection-start-column="69" selection-end-line="189" selection-end-column="69" />
+        <state relative-caret-position="100">
+          <caret line="9" column="43" lean-forward="false" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
           <folding>
             <element signature="method#Controller#0;class#Controller#0" expanded="false" />
             <element signature="method#getSingletonController#0;class#Controller#0" expanded="false" />
@@ -1154,10 +1056,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/skeleton/Skeleton.java">
+    <entry file="file://$PROJECT_DIR$/build.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="58" column="80" lean-forward="false" selection-start-line="58" selection-start-column="80" selection-end-line="58" selection-end-column="80" />
+        <state relative-caret-position="480">
+          <caret line="24" column="15" lean-forward="false" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
           <folding />
         </state>
       </provider>

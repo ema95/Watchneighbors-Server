@@ -9,6 +9,9 @@ import java.io.*;
 import java.net.Socket;
 import java.util.ArrayList;
 
+/**
+ * Class used to communicate with a client
+ */
 public class Skeleton extends Thread implements ServerInterface {
     private Socket socket;
     private ServerInterface realServer;
