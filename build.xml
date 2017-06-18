@@ -1,6 +1,6 @@
 <project basedir="." name="Watchneighbors-Server" default="runServer">
-    <property name="userid" value="test_login"/>
-    <property name="password" value="test"/>
+    <property name="userid" value="postgres"/>
+    <property name="password" value="admin"/>
     <path id="Watchneighbors-Server.path">
         <pathelement location="bin"/>
         <pathelement location="./DB_Jar/postgresql-42.0.0.jar"/>
